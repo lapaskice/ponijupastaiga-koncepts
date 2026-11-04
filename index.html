@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Ponijupastaiga: pastaigas ar ponijiem un zirgu izjādes Rīgā</title>
+<meta name="description" content="Pastaiga ar poniju pa mežu bērniem, izjāde ar zirgu līdz jūrai, dzimšanas diena ar ponijiem. Stāvvadu iela 17, Rīga. Katru dienu 10:00–19:00, pieteikšanās WhatsApp: 26 954 430.">
+<meta name="theme-color" content="#381535">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.jpg">
+<style>
+:root{
+  --plum:#381535; --plum-d:#260c24; --plum-l:#4d2649; --line:rgba(246,236,222,.24);
+  --cream:#f6ecde; --paper:#f9f3e9; --sand:#efe5d4; --ink:#2b1029; --ink2:#5c4959; --mute:#8b7887;
+  --gold:#b98426; --sun:#e9bd62;
+  --serif:"Gloock","Playfair Display",Georgia,"Times New Roman",serif;
+  --sans:"Mulish",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --pad:clamp(16px,4.6vw,48px); --max:1140px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16.5px/1.58 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit}
+[data-lang][hidden]{display:none!important}
+[hidden]{display:none!important}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;letter-spacing:-.005em}
+p{margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.cap{font:800 11.5px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase}
+
+/* notice + header */
+.notice{background:var(--plum-d);color:rgba(246,236,222,.78);font:500 clamp(11px,3.1vw,12.5px)/1.45 var(--sans);text-align:center;padding:7px 10px}
+.notice b{color:var(--cream);font-weight:800}
+.top{background:var(--plum);color:var(--cream)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:62px}
+.mark{display:flex;align-items:center;gap:11px;text-decoration:none;min-width:0}
+.mark img{width:38px;height:auto;flex:none}
+.mark b{display:block;font:400 20px/1 var(--serif);letter-spacing:.005em}
+.mark small{display:block;margin-top:5px;font:700 9.5px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:rgba(246,236,222,.7);white-space:nowrap}
+.nav{display:none}
+.langs{display:flex;gap:2px;flex:none}
+.langs button{background:none;border:0;padding:15px 9px;font:800 12.5px/1 var(--sans);letter-spacing:.1em;color:rgba(246,236,222,.6);cursor:pointer}
+.langs button[aria-pressed="true"]{color:var(--cream);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px;text-decoration-color:var(--sun)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 20px;border-radius:3px;font:800 16px/1.15 var(--sans);text-decoration:none;cursor:pointer;border:1.5px solid transparent;text-align:center}
+.btn svg{width:20px;height:20px;flex:none}
+.btn.pri{background:var(--plum);color:var(--cream)}
+.btn.line{border-color:var(--plum);color:var(--plum);background:transparent}
+.btn.sun{background:var(--sun);color:var(--plum-d)}
+.btn.ghost{border-color:var(--line);color:var(--cream)}
+
+/* hero */
+.hero{display:flex;flex-direction:column;height:calc(100vh - var(--chrome,104px));height:calc(100svh - var(--chrome,104px));min-height:540px;max-height:880px}
+.hero-ph{flex:1 1 0;min-height:0;position:relative;overflow:hidden;background:#b5c3d2;margin:0}
+.hero-ph img{width:100%;height:100%;object-fit:cover;object-position:50% 24%}
+.badge{position:absolute;left:var(--pad);top:14px;display:flex;align-items:center;gap:7px;background:rgba(43,16,41,.86);color:var(--cream);font:600 12.5px/1 var(--sans);padding:8px 11px 8px 9px;border-radius:2px;text-decoration:none}
+.badge svg{width:13px;height:13px;color:var(--sun)}
+.badge b{font-weight:800;font-size:13.5px}
+.badge i{font-style:normal}
+.sheet{flex:none;position:relative;margin-top:-26px;background:var(--paper);border-radius:50% 50% 0 0 / 26px 26px 0 0;padding:30px var(--pad) 20px}
+.sheet h1{font-size:clamp(33px,9.4vw,40px);line-height:1.04;color:var(--ink);max-width:11.5em;text-wrap:balance}
+.tag{margin-top:9px;font:italic 500 17px/1.35 var(--sans);color:var(--plum)}
+.where{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;margin-top:15px}
+.where .cap{color:var(--mute);font-size:10.5px}
+.where p+p{margin-top:3px;font:700 clamp(13px,3.7vw,14.5px)/1.3 var(--sans);color:var(--ink);white-space:nowrap}
+.acts{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:10px;margin-top:17px}
+.acts .btn{padding:0 10px}
+
+/* sections */
+.sec{padding:64px 0}
+.sec-head h2{font-size:clamp(31px,8.4vw,48px);line-height:1.06}
+.sec-head p{margin-top:12px;color:var(--ink2);max-width:34em}
+.waves{display:block;width:44px;height:10px;color:var(--gold);margin-bottom:16px}
+
+/* offers */
+.offers{display:grid;gap:64px;margin-top:40px}
+.offer figure{margin:0}
+.offer figure img{width:100%;border-radius:3px}
+.offer figcaption{margin-top:8px;font:500 13px/1.4 var(--sans);color:var(--mute)}
+.o-body{margin-top:22px}
+.o-body h3{font-size:clamp(26px,7vw,36px);line-height:1.08}
+.o-body>p{margin-top:12px;color:var(--ink2)}
+.facts{margin:20px 0 0;display:grid;gap:12px}
+.facts div{display:grid;grid-template-columns:104px minmax(0,1fr);gap:12px;align-items:baseline}
+.facts dt{font:800 11px/1.4 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.facts dd{margin:0;font-weight:600;color:var(--ink);line-height:1.45}
+.prices{margin:20px 0 0;display:grid;gap:9px}
+.prices div{display:flex;align-items:baseline;justify-content:space-between;gap:16px}
+.prices dt{font-weight:600;color:var(--ink)}
+.prices dd{margin:0;font:400 21px/1 var(--serif);color:var(--plum);white-space:nowrap}
+.prices .fill{white-space:nowrap}
+.src{margin-top:22px}
+.src .cap{color:var(--mute);font-size:11px}
+.src p+p{margin-top:8px}
+.src .fill{align-items:flex-start}
+.src .fill svg{margin-top:2px}
+.src+.prices{margin-top:16px}
+.note{margin-top:14px;font-size:14px;line-height:1.5;color:var(--ink2)}
+.fill{display:inline-flex;align-items:center;gap:7px;padding:4px 10px 4px 8px;border:1.5px dashed var(--gold);border-radius:2px;font:700 13px/1.35 var(--sans);color:#8a5f12;background:rgba(233,189,98,.14)}
+.fill svg{width:13px;height:13px;flex:none}
+.quote{margin:24px 0 0;padding:0 0 0 18px;border-left:2px solid var(--sun)}
+.quote p{font:italic 500 16.5px/1.55 var(--sans);color:var(--ink)}
+.quote cite{display:block;margin-top:9px;font:800 11px/1.4 var(--sans);letter-spacing:.12em;text-transform:uppercase;font-style:normal;color:var(--mute)}
+.go{display:inline-flex;align-items:center;gap:9px;margin-top:24px;font:800 15.5px/1.2 var(--sans);color:var(--plum);text-decoration:none;border-bottom:2px solid var(--sun);padding-bottom:5px}
+.go svg{width:16px;height:16px;flex:none}
+.also{margin-top:64px;padding:26px 22px 28px;background:var(--sand);border-radius:3px}
+.also h3{font-size:clamp(24px,6.4vw,32px);line-height:1.1}
+.also p{margin-top:10px;color:var(--ink2)}
+.also-side{margin-top:16px}
+.also-side p{margin-top:0}
+.also .go{margin-top:18px}
+
+/* tool */
+.tool{background:var(--plum);color:var(--cream);padding:72px 0 60px;border-radius:50% 50% 0 0 / 26px 26px 0 0}
+.tool .sec-head p{color:rgba(246,236,222,.76)}
+.tool .waves{color:var(--sun)}
+.tool-grid{display:grid;gap:34px;margin-top:34px}
+.fs{border:0;margin:0;padding:0;min-width:0}
+.fs+.fs{margin-top:30px}
+.fs legend{padding:0;margin-bottom:12px;font:800 12px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--sun)}
+.chips{display:grid;gap:8px}
+.chips.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.chips.c3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.chips button{min-height:54px;padding:8px 14px;background:transparent;border:1.5px solid var(--line);border-radius:3px;color:var(--cream);font:700 15.5px/1.2 var(--sans);text-align:left;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.chips.c3 button,.chips.c2 button{justify-content:center;text-align:center;padding:8px 6px;font-size:14.5px}
+.chips .full{grid-column:1 / -1}
+.chips button small{display:block;margin-top:3px;font:600 12.5px/1 var(--sans);opacity:.75}
+.chips button[aria-pressed="true"]{background:var(--cream);border-color:var(--cream);color:var(--plum-d)}
+.chips button .tick{width:18px;height:18px;flex:none;opacity:0}
+.chips button[aria-pressed="true"] .tick{opacity:1}
+.sub{margin-top:10px;padding:12px;background:var(--plum-l);border-radius:3px}
+.sub .chips button{min-height:48px}
+.field{display:block;width:100%;min-height:52px;margin-top:8px;padding:0 14px;background:rgba(246,236,222,.08);border:1.5px solid var(--line);border-radius:3px;color:var(--cream);font:600 16px/1.2 var(--sans);-webkit-appearance:none;appearance:none}
+.field::placeholder{color:rgba(246,236,222,.5)}
+.field:focus,.chips button:focus-visible,.step button:focus-visible{outline:2px solid var(--sun);outline-offset:2px}
+input[type="date"].field{color-scheme:dark}
+.flabel{display:block;margin-top:14px;font:700 13.5px/1.3 var(--sans);color:rgba(246,236,222,.8)}
+.flabel+.field{margin-top:6px}
+.gap{margin-top:10px}
+.count{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.count+.count{margin-top:8px}
+#ages{margin-top:8px}
+#ages .count>span{font-size:15px}
+.count>span{font:700 15.5px/1.25 var(--sans)}
+.step{display:flex;align-items:center;flex:none;border:1.5px solid var(--line);border-radius:3px}
+.step button{width:50px;height:50px;background:none;border:0;font:400 26px/1 var(--sans);color:var(--cream);cursor:pointer}
+.step output{min-width:68px;text-align:center;font:800 16px/1 var(--sans)}
+.step.big output{font:400 24px/1 var(--serif)}
+.out .cap{color:var(--sun)}
+.bubble{position:relative;margin-top:12px;background:#fffaf2;color:#231022;border-radius:14px 14px 14px 3px;padding:16px 18px 18px;font:500 15.5px/1.55 var(--sans);white-space:pre-wrap;overflow-wrap:anywhere}
+.to{display:flex;align-items:center;gap:8px;margin-top:10px;font:600 13px/1.3 var(--sans);color:rgba(246,236,222,.7)}
+.to svg{width:15px;height:15px;color:var(--sun)}
+.out .btn{width:100%;min-height:60px;margin-top:20px;font-size:17px}
+.fine{margin-top:12px;font-size:13.5px;line-height:1.5;color:rgba(246,236,222,.72)}
+.alt{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:16px}
+.alt a{font:700 14.5px/1.3 var(--sans);color:var(--cream);text-underline-offset:5px;text-decoration-color:rgba(246,236,222,.45)}
+
+/* find us */
+.find{background:var(--sand)}
+.find-grid{display:grid;gap:28px}
+.find figure{margin:0}
+.find figure img{width:100%;border-radius:3px}
+.find figcaption{margin-top:8px;font:500 13px/1.4 var(--sans);color:var(--mute)}
+.addr{margin-top:22px;font:400 clamp(24px,6.6vw,32px)/1.15 var(--serif);color:var(--plum)}
+.find .facts{margin-top:22px}
+.find .acts2{display:grid;gap:10px;margin-top:26px}
+
+/* reviews */
+.rev-top{display:grid;gap:28px}
+.rev-top figure{margin:0}
+.rev-top img{width:100%;border-radius:3px}
+.score{display:flex;align-items:baseline;gap:14px;margin-top:18px}
+.score b{font:400 60px/0.9 var(--serif);color:var(--plum)}
+.score span{font:700 14.5px/1.35 var(--sans);color:var(--ink2)}
+.revs{display:grid;gap:34px;margin-top:40px}
+.revs .quote{margin-top:0}
+.quote.big{padding-left:0;border-left:0}
+.quote.big p{font:400 clamp(21px,5.7vw,28px)/1.32 var(--serif);color:var(--plum)}
+.go.video{margin-top:38px}
+
+/* footer */
+footer{background:var(--plum-d);color:rgba(246,236,222,.8);padding:54px 0 40px;font-size:15px}
+.f-logo{width:92px}
+.f-hash{width:176px;margin-top:14px;opacity:.92}
+.f-grid{display:grid;gap:34px}
+.f-col .cap{color:var(--sun);margin-bottom:12px}
+.f-col a{text-underline-offset:4px;text-decoration-color:rgba(246,236,222,.4)}
+.f-col p+p{margin-top:6px}
+.f-big{font:400 28px/1.1 var(--serif);color:var(--cream);text-decoration:none}
+.f-note{margin-top:40px;padding-top:24px;border-top:1px solid rgba(246,236,222,.16);font-size:13.5px;line-height:1.6;color:rgba(246,236,222,.66)}
+.f-note p+p{margin-top:10px}
+.f-note b{color:var(--cream)}
+
+/* phone dock */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:20;display:grid;grid-template-columns:minmax(0,1fr) 56px;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--plum-d);transform:translateY(110%);transition:transform .25s ease}
+.dock.on{transform:none}
+.dock .btn{min-height:50px}
+.dock .btn.ghost{padding:0}
+
+/* phone with the browser bars showing: give the photo its height back */
+@media (max-width:859px) and (max-height:720px){
+  .sheet{padding-top:24px;padding-bottom:16px}
+  .sheet h1{font-size:clamp(30px,8.3vw,32px)}
+  .tag{margin-top:7px;font-size:16px}
+  .where{margin-top:10px}
+  .acts{margin-top:12px}
+  .acts .btn{min-height:50px}
+  .hero-ph img{object-position:50% 44%}
+  .badge i{display:none}
+}
+
+@media (min-width:860px){
+  body{font-size:17px}
+  .dock{display:none}
+  .top .wrap{height:78px}
+  .mark img{width:44px}
+  .mark b{font-size:25px}
+  .mark small{font-size:10.5px;margin-top:6px}
+  .nav{display:flex;gap:30px;font:700 14.5px/1 var(--sans)}
+  .nav a{text-decoration:none;color:rgba(246,236,222,.82)}
+  .nav a:hover{color:var(--cream)}
+  .hero{flex-direction:row-reverse;height:auto;min-height:0;max-height:none;max-width:var(--max);margin:0 auto;padding:56px var(--pad) 24px;gap:64px;align-items:center}
+  .hero-ph{flex:0 0 46%;height:min(74vh,640px);min-height:480px;border-radius:3px}
+  .hero-ph img{object-position:50% 30%}
+  .badge{left:16px;top:16px}
+  .sheet{flex:1;margin:0;border-radius:0;padding:0;background:none}
+  .sheet h1{font-size:clamp(50px,5.4vw,68px);line-height:1.02}
+  .tag{margin-top:18px;font-size:22px}
+  .where{margin-top:30px;max-width:460px;gap:30px}
+  .where .cap{font-size:11.5px}
+  .where p+p{font-size:16.5px;margin-top:5px}
+  .acts{margin-top:32px;max-width:460px;gap:12px}
+  .btn{min-height:58px}
+  .sec{padding:104px 0}
+  .offers{gap:104px;margin-top:64px}
+  .offer{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:72px;align-items:center}
+  .offer:nth-child(even) figure{order:2}
+  .offer.wide{grid-template-columns:minmax(0,5fr) minmax(0,6fr)}
+  .o-body{margin-top:0}
+  .also{margin-top:104px;padding:40px 44px;display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:72px;align-items:center}
+  .also-side{margin-top:0}
+  .facts div{grid-template-columns:128px minmax(0,1fr)}
+  .tool{padding:104px 0 100px;border-radius:0}
+  .tool-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;margin-top:56px;align-items:start}
+  .out{position:sticky;top:28px}
+  .find-grid{grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:72px;align-items:center}
+  .find .acts2{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rev-top{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:72px;align-items:center}
+  .rev-top figure{order:2}
+  .revs{grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:56px 72px;margin-top:72px;align-items:start}
+  .go.video{margin-top:56px}
+  .f-grid{grid-template-columns:1.1fr 1fr 1fr;gap:56px}
+}
+</style>
+</head>
+<body>
+
+<div class="notice"><b>Nikita:</b> <span data-lang="lv">Dizaina priekšlikums, nav Ponijupastaigas oficiālā lapa.</span><span data-lang="ru" hidden>Дизайн-предложение, не официальный сайт.</span></div>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="mark" href="#top">
+      <img src="img/logo.png" width="336" height="454" alt="Jātnieku sporta klubs Īriss, 1938">
+      <span><b>Ponijupastaiga</b><small><span data-lang="lv">JSK Īriss, Rīga</span><span data-lang="ru" hidden>JSK Īriss, Рига</span></small></span>
+    </a>
+    <nav class="nav">
+      <a href="#piedavajums"><span data-lang="lv">Ko var pieteikt</span><span data-lang="ru" hidden>Что можно заказать</span></a>
+      <a href="#pieteikums"><span data-lang="lv">Pieteikums</span><span data-lang="ru" hidden>Заявка</span></a>
+      <a href="#atrast"><span data-lang="lv">Kā mūs atrast</span><span data-lang="ru" hidden>Как нас найти</span></a>
+      <a href="#atsauksmes"><span data-lang="lv">Atsauksmes</span><span data-lang="ru" hidden>Отзывы</span></a>
+    </nav>
+    <div class="langs" role="group" aria-label="Valoda, язык">
+      <button type="button" data-set="lv" aria-pressed="true">LV</button>
+      <button type="button" data-set="ru" aria-pressed="false">RU</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <figure class="hero-ph">
+    <img src="img/hero.jpg" width="1080" height="1378" alt="Pelēks ponijs ar pļavas ziedu vainagu galvā ēd sienu aplokā" fetchpriority="high">
+    <a class="badge" href="#atsauksmes">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg>
+      <b>4,8</b>
+      <span data-lang="lv">Google<i>, 22 atsauksmes</i></span><span data-lang="ru" hidden>в Google<i>, 22 отзыва</i></span>
+    </a>
+  </figure>
+  <div class="sheet">
+    <h1><span data-lang="lv">Pastaiga ar poniju pa mežu Rīgā</span><span data-lang="ru" hidden>Прогулка на пони по лесу в Риге</span></h1>
+    <p class="tag"><span data-lang="lv">Bērniem prieks, vecākiem miers.</span><span data-lang="ru" hidden>Детям радость, родителям покой.</span></p>
+    <div class="where">
+      <div><p class="cap"><span data-lang="lv">Adrese</span><span data-lang="ru" hidden>Адрес</span></p><p><span data-lang="lv">Stāvvadu iela 17, Rīga</span><span data-lang="ru" hidden>Stāvvadu iela 17, Рига</span></p></div>
+      <div><p class="cap"><span data-lang="lv">Atvērts</span><span data-lang="ru" hidden>Открыто</span></p><p><span data-lang="lv">Katru dienu 10:00–19:00</span><span data-lang="ru" hidden>Ежедневно 10:00–19:00</span></p></div>
+    </div>
+    <div class="acts" id="heroacts">
+      <a class="btn pri" href="#pieteikums">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span data-lang="lv">Pieteikt izjādi</span><span data-lang="ru" hidden>Записаться</span>
+      </a>
+      <a class="btn line" href="tel:+37126954430">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>
+        26 954 430
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="piedavajums">
+  <div class="wrap">
+    <div class="sec-head">
+      <svg class="waves" viewBox="0 0 44 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M1 3c3.5 5 7 5 10.5 0C15 8 18.5 8 22 3c3.5 5 7 5 10.5 0C36 8 39.5 8 43 3"/></svg>
+      <h2><span data-lang="lv">Ko var pieteikt</span><span data-lang="ru" hidden>Что можно заказать</span></h2>
+      <p><span data-lang="lv">Izvēlieties, kas der jūsu ģimenei, un piesakieties ar vienu ziņu.</span><span data-lang="ru" hidden>Выберите то, что подходит вашей семье, и запишитесь одним сообщением.</span></p>
+    </div>
+
+    <div class="offers">
+
+      <article class="offer">
+        <figure>
+          <img src="img/mezs.jpg" width="900" height="1200" loading="lazy" alt="Sūnaina meža taka starp priedēm pret sauli, skats starp zirga ausīm">
+          <figcaption><span data-lang="lv">Meža taka, skats no segliem.</span><span data-lang="ru" hidden>Лесная тропа, вид из седла.</span></figcaption>
+        </figure>
+        <div class="o-body">
+          <h3><span data-lang="lv">Pastaiga ar poniju pa mežu</span><span data-lang="ru" hidden>Прогулка на пони по лесу</span></h3>
+          <p><span data-lang="lv">Bērns sēž ponija mugurā, mēs ejam līdzi pa meža takām un stāstām par ponijiem un zirgiem. Atsauksmēs stāsta, ka beigās bērni aplokā baro kazas.</span><span data-lang="ru" hidden>Ребёнок сидит верхом на пони, мы идём рядом по лесным тропинкам и рассказываем о пони и лошадях. В отзывах рассказывают, что в конце дети кормят коз в загоне.</span></p>
+          <p class="note"><span data-lang="lv">Cenu un ilgumu pajautājiet pieteikumā, saimnieki atbildēs.</span><span data-lang="ru" hidden>Цену и длительность уточните в заявке, хозяева ответят.</span></p>
+          <p class="note"><span data-lang="lv">Atsauksmēs jaunākajai jātniecei ir divi gadi.</span><span data-lang="ru" hidden>В отзывах самой младшей всаднице два года.</span></p>
+          <blockquote class="quote">
+            <p><span data-lang="lv">„Trīsgadīgam bērnam pastaiga ar skaistu poniju pa meža takām, ar stāstiem par zirgiem un to audzēšanu. Un beigās tikām arī barot kazas iekšā aplokā, kas mazam bērnam arī bija super pieredze.”</span><span data-lang="ru" hidden>«Трёхлетнему ребёнку прогулка на красивом пони по лесным тропинкам, с рассказами о лошадях и их разведении. А в конце нам ещё дали покормить коз в загоне, для малыша это тоже был отличный опыт.»</span></p>
+            <cite>Toms Lazdovskis, <span data-lang="lv">Google atsauksme</span><span data-lang="ru" hidden>отзыв в Google, перевод</span></cite>
+          </blockquote>
+          <a class="go" href="#pieteikums" data-pick="poni"><span data-lang="lv">Pieteikt pastaigu</span><span data-lang="ru" hidden>Записаться на прогулку</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <article class="offer wide">
+        <figure>
+          <img src="img/jura.jpg" width="1280" height="853" loading="lazy" alt="Jātnieks ķiverē uz tumša zirga stāv seklā jūras ūdenī, aiz viņa akmeņu mols">
+          <figcaption><span data-lang="lv">Izjādes galamērķis: jūra.</span><span data-lang="ru" hidden>Цель прогулки: море.</span></figcaption>
+        </figure>
+        <div class="o-body">
+          <h3><span data-lang="lv">Izjāde ar zirgu līdz jūrai</span><span data-lang="ru" hidden>Конная прогулка до моря</span></h3>
+          <p><span data-lang="lv">Līdz jūrai jājam caur priežu mežu un kāpām, apmēram 25 minūtes. Instruktors pa ceļam pastāsta galveno, kas jāzina, bet atpakaļceļu izvēlas pēc dabas apstākļiem: gar jūras krastu vai pa mežu.</span><span data-lang="ru" hidden>Дорога до моря идёт через сосновый лес и дюны и занимает около 25 минут. Инструктор по пути рассказывает главное, что нужно знать, а обратный путь выбирает по погоде: вдоль берега или через лес.</span></p>
+          <div class="src">
+            <p class="cap"><span data-lang="lv">Cenas no kluba mājaslapas iriss.lv</span><span data-lang="ru" hidden>Цены с сайта клуба iriss.lv</span></p>
+            
+          </div>
+          <dl class="prices">
+            <div><dt><span data-lang="lv">Pa mežu</span><span data-lang="ru" hidden>По лесу</span></dt><dd>30 EUR</dd></div>
+            <div><dt><span data-lang="lv">Pa mežu un gar jūras krastu</span><span data-lang="ru" hidden>По лесу и вдоль моря</span></dt><dd>35 EUR</dd></div>
+            <div><dt><span data-lang="lv">Izjāde pēc 18:00</span><span data-lang="ru" hidden>Прогулка после 18:00</span></dt><dd>40 EUR</dd></div>
+            <div><dt><span data-lang="lv">Romantiska izjāde diviem</span><span data-lang="ru" hidden>Романтическая прогулка для двоих</span></dt><dd>100 EUR</dd></div>
+          </dl>
+          <p class="note"><span data-lang="lv">Stundu gara izjāde grupā no 4 personām.</span><span data-lang="ru" hidden>Прогулка длится час, группа от 4 человек.</span></p>
+          <blockquote class="quote">
+            <p><span data-lang="lv">„Ļoti patika pastaiga ar zirgiem pa mežu līdz jūrai! Liels paldies saimniekiem”</span><span data-lang="ru" hidden>«Очень понравилась прогулка на лошадях по лесу до моря! Большое спасибо хозяевам»</span></p>
+            <cite>V F, <span data-lang="lv">Google atsauksme</span><span data-lang="ru" hidden>отзыв в Google, перевод</span></cite>
+          </blockquote>
+          <a class="go" href="#pieteikums" data-pick="jura"><span data-lang="lv">Pieteikt izjādi līdz jūrai</span><span data-lang="ru" hidden>Записаться на прогулку до моря</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <article class="offer">
+        <figure>
+          <img src="img/svetki.jpg" width="1040" height="890" loading="lazy" alt="Ponijs ar bantītēm krēpēs un rozā seglu segu">
+          <figcaption><span data-lang="lv">Ponijs ar bantītēm krēpēs. Foto: Māra Rūrāne.</span><span data-lang="ru" hidden>Пони с бантиками в гриве. Фото: Māra Rūrāne.</span></figcaption>
+        </figure>
+        <div class="o-body">
+          <h3><span data-lang="lv">Dzimšanas diena un ponijs jūsu svētkos</span><span data-lang="ru" hidden>День рождения и пони на вашем празднике</span></h3>
+          <p><span data-lang="lv">Pie mums stallī jubilārs ar draugiem jāj ar ponijiem. Varam atbraukt arī pie jums: uz dzimšanas dienu, ģimenes svētkiem vai citu pasākumu.</span><span data-lang="ru" hidden>У нас в конюшне именинник с друзьями катается на пони. Можем приехать и к вам: на день рождения, семейный праздник или другое мероприятие.</span></p>
+          <p class="note"><span data-lang="lv">Cenu un ilgumu pajautājiet pieteikumā, saimnieki atbildēs.</span><span data-lang="ru" hidden>Цену и длительность уточните в заявке, хозяева ответят.</span></p>
+          <blockquote class="quote">
+            <p><span data-lang="lv">„…mūsu meitiņai bija dzimšanas diena … jubilāre ponijs bija skaisti izpušķots, kas mums bija pārsteigums! Ļoti iesaku!”</span><span data-lang="ru" hidden>«…у нашей дочки был день рождения … пони именинницы был красиво украшен, для нас это был сюрприз! Очень рекомендую!»</span></p>
+            <cite>Māra Rūrāne, <span data-lang="lv">Google atsauksme</span><span data-lang="ru" hidden>отзыв в Google, перевод</span></cite>
+          </blockquote>
+          <a class="go" href="#pieteikums" data-pick="svetki"><span data-lang="lv">Pieteikt svētkus</span><span data-lang="ru" hidden>Заказать праздник</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="also" id="apmaciba">
+      <div>
+        <h3><span data-lang="lv">Jāšanas apmācība</span><span data-lang="ru" hidden>Обучение верховой езде</span></h3>
+        <p><span data-lang="lv">Treniņš: 30 EUR darba dienās, 35 EUR brīvdienās. Abonements: 200 EUR par 8 nodarbībām vai 280 EUR par 12 nodarbībām.</span><span data-lang="ru" hidden>Тренировка: 30 EUR в будни, 35 EUR в выходные. Абонемент: 200 EUR за 8 занятий или 280 EUR за 12 занятий.</span></p>
+      </div>
+      <div class="also-side">
+        <p class="note"><span data-lang="lv">Cenas no kluba mājaslapas iriss.lv.</span><span data-lang="ru" hidden>Цены с сайта клуба iriss.lv.</span></p>
+        <a class="go" href="#pieteikums" data-pick="trenins"><span data-lang="lv">Pieteikt treniņu</span><span data-lang="ru" hidden>Записаться на тренировку</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tool" id="pieteikums">
+  <div class="wrap">
+    <div class="sec-head">
+      <svg class="waves" viewBox="0 0 44 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M1 3c3.5 5 7 5 10.5 0C15 8 18.5 8 22 3c3.5 5 7 5 10.5 0C36 8 39.5 8 43 3"/></svg>
+      <h2><span data-lang="lv">Pieteikums vienā ziņā</span><span data-lang="ru" hidden>Заявка одним сообщением</span></h2>
+      <p><span data-lang="lv">Atzīmējiet, ko vēlaties, un lapa uzrakstīs ziņu. Mēs uzreiz redzam visu vajadzīgo un atbildam vienā reizē.</span><span data-lang="ru" hidden>Отметьте, что вам нужно, и страница сама напишет сообщение. Мы сразу видим всё нужное и отвечаем за один раз.</span></p>
+    </div>
+
+    <div class="tool-grid">
+      <div class="form">
+        <fieldset class="fs">
+          <legend><span data-lang="lv">1. Ko vēlaties?</span><span data-lang="ru" hidden>1. Что вы хотите?</span></legend>
+          <div class="chips" data-group="offer">
+            <button type="button" data-v="poni" aria-pressed="true"><span><span data-lang="lv">Pastaiga ar poniju</span><span data-lang="ru" hidden>Прогулка на пони</span></span><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button>
+            <button type="button" data-v="jura" aria-pressed="false"><span><span data-lang="lv">Izjāde ar zirgu līdz jūrai</span><span data-lang="ru" hidden>Конная прогулка до моря</span></span><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button>
+            <button type="button" data-v="svetki" aria-pressed="false"><span><span data-lang="lv">Dzimšanas diena vai svētki</span><span data-lang="ru" hidden>День рождения или праздник</span></span><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button>
+            <button type="button" data-v="trenins" aria-pressed="false"><span><span data-lang="lv">Jāšanas treniņš</span><span data-lang="ru" hidden>Тренировка по верховой езде</span></span><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button>
+          </div>
+          <div class="sub" data-for="jura" hidden>
+            <div class="chips c2" data-group="route">
+              <button type="button" data-v="mezs" aria-pressed="false"><span data-lang="lv">Pa mežu</span><span data-lang="ru" hidden>По лесу</span></button>
+              <button type="button" data-v="jura" aria-pressed="true"><span data-lang="lv">Pa mežu un gar jūru</span><span data-lang="ru" hidden>По лесу и вдоль моря</span></button>
+              <button type="button" class="full" data-v="romant" aria-pressed="false"><span data-lang="lv">Romantiska izjāde diviem</span><span data-lang="ru" hidden>Романтическая прогулка для двоих</span></button>
+            </div>
+          </div>
+          <div class="sub" data-for="svetki" hidden>
+            <div class="chips c2" data-group="place">
+              <button type="button" data-v="stallis" aria-pressed="true"><span data-lang="lv">Pie mums stallī</span><span data-lang="ru" hidden>У нас в конюшне</span></button>
+              <button type="button" data-v="izbraukums" aria-pressed="false"><span data-lang="lv">Ponijs brauc pie jums</span><span data-lang="ru" hidden>Пони приезжает к вам</span></button>
+            </div>
+            <input class="field" id="vieta" type="text" autocomplete="off" hidden data-ph-lv="Kur notiks svētki?" data-ph-ru="Где будет праздник?" placeholder="Kur notiks svētki?" aria-label="Kur notiks svētki">
+          </div>
+        </fieldset>
+
+        <fieldset class="fs">
+          <legend><span data-lang="lv">2. Kad?</span><span data-lang="ru" hidden>2. Когда?</span></legend>
+          <div class="chips c3" data-group="day" id="days"></div>
+          <label class="flabel" for="datums" id="datlabel" hidden><span data-lang="lv">Izvēlieties datumu</span><span data-lang="ru" hidden>Выберите дату</span></label>
+          <input class="field" id="datums" type="date" hidden>
+          <div class="chips c3 gap" data-group="time">
+            <button type="button" data-v="am" aria-pressed="false"><span data-lang="lv">No rīta</span><span data-lang="ru" hidden>Утром</span></button>
+            <button type="button" data-v="pm" aria-pressed="false"><span data-lang="lv">Pēcpusdienā</span><span data-lang="ru" hidden>После обеда</span></button>
+            <button type="button" data-v="any" aria-pressed="true"><span data-lang="lv">Vienalga</span><span data-lang="ru" hidden>Неважно</span></button>
+          </div>
+        </fieldset>
+
+        <fieldset class="fs" id="cntfs">
+          <legend id="cntlegend">3. Cik bērnu jās?</legend>
+          <div class="count">
+            <span id="cntlabel">Bērni</span>
+            <div class="step big"><button type="button" id="nminus" aria-label="Mazāk">−</button><output id="nout">1</output><button type="button" id="nplus" aria-label="Vairāk">+</button></div>
+          </div>
+          <div id="ages"></div>
+        </fieldset>
+      </div>
+
+      <div class="out">
+        <p class="cap"><span data-lang="lv">Ziņa, ko saņemsim</span><span data-lang="ru" hidden>Сообщение, которое мы получим</span></p>
+        <div class="bubble" id="msg" aria-live="polite"></div>
+        <p class="to"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span data-lang="lv">WhatsApp uz numuru 26 954 430</span><span data-lang="ru" hidden>WhatsApp на номер 26 954 430</span></p>
+        <a class="btn sun" id="wa" href="https://wa.me/37126954430" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span data-lang="lv">Atvērt WhatsApp ar šo ziņu</span><span data-lang="ru" hidden>Открыть в WhatsApp</span>
+        </a>
+        <p class="fine"><span data-lang="lv">Lapa pati neko nenosūta: tā atver jūsu WhatsApp ar gatavu tekstu, un nosūtāt jūs.</span><span data-lang="ru" hidden>Страница сама ничего не отправляет: она открывает ваш WhatsApp с готовым текстом, а отправляете вы.</span></p>
+        <p class="alt">
+          <a id="sms" href="sms:+37126954430"><span data-lang="lv">Sūtīt īsziņā</span><span data-lang="ru" hidden>Отправить по SMS</span></a>
+          <a href="tel:+37126954430"><span data-lang="lv">Zvanīt 26 954 430</span><span data-lang="ru" hidden>Позвонить 26 954 430</span></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec find" id="atrast">
+  <div class="wrap find-grid">
+    <figure>
+      <img src="img/stallis.jpg" width="1280" height="853" loading="lazy" alt="Koka stallis ar lampiņu virtenēm gar jumtu ziemas vakarā">
+      <figcaption><span data-lang="lv">Stallis ziemas vakarā.</span><span data-lang="ru" hidden>Конюшня зимним вечером.</span></figcaption>
+    </figure>
+    <div>
+      <div class="sec-head">
+        <h2><span data-lang="lv">Kā mūs atrast</span><span data-lang="ru" hidden>Как нас найти</span></h2>
+      </div>
+      <p class="addr"><span data-lang="lv">Stāvvadu iela 17, Rīga</span><span data-lang="ru" hidden>Stāvvadu iela 17, Рига</span></p>
+      <dl class="facts">
+        <div><dt><span data-lang="lv">Atvērts</span><span data-lang="ru" hidden>Открыто</span></dt><dd><span data-lang="lv">Katru dienu 10:00–19:00. Laiku sarunājiet iepriekš: vietu skaits ir ierobežots.</span><span data-lang="ru" hidden>Каждый день 10:00–19:00. Время лучше согласовать заранее: количество мест ограничено.</span></dd></div>
+        <div><dt><span data-lang="lv">Ceļš</span><span data-lang="ru" hidden>Дорога</span></dt><dd><span data-lang="lv">Ērti nokļūt gan ar automašīnu, gan ar sabiedrisko transportu.</span><span data-lang="ru" hidden>Удобно добраться и на машине, и на общественном транспорте.</span></dd></div>
+        <div><dt><span data-lang="lv">Apkārtne</span><span data-lang="ru" hidden>Вокруг</span></dt><dd><span data-lang="lv">Līdz jūrai 25 minūšu gājiens caur mežu, līdz Vecdaugavas peldvietai 10 minūtes.</span><span data-lang="ru" hidden>До моря 25 минут пешком через лес, до пляжа на Вецдаугаве 10 минут.</span></dd></div>
+        
+      </dl>
+      <div class="acts2">
+        <a class="btn pri" href="https://maps.google.com/?cid=9647801875584193282" target="_blank" rel="noopener"><span data-lang="lv">Atvērt Google Maps</span><span data-lang="ru" hidden>Открыть в Google Maps</span></a>
+        <a class="btn line" href="tel:+37126954430"><span data-lang="lv">Zvanīt 26 954 430</span><span data-lang="ru" hidden>Позвонить 26 954 430</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="atsauksmes">
+  <div class="wrap">
+    <div class="rev-top">
+      <figure><img src="img/ponijs.jpg" width="1080" height="864" loading="lazy" alt="Pelēks ponijs iet pa aploku vakara gaismā"></figure>
+      <div>
+        <div class="sec-head">
+          <h2><span data-lang="lv">Ko saka ģimenes</span><span data-lang="ru" hidden>Что говорят семьи</span></h2>
+        </div>
+        <p class="score"><b>4,8</b><span><span data-lang="lv">no 5 zvaigznēm<br>22 Google atsauksmes</span><span data-lang="ru" hidden>из 5 звёзд<br>22 отзыва в Google</span></span></p>
+      </div>
+    </div>
+    <div class="revs">
+      <blockquote class="quote big">
+        <p><span data-lang="lv">„Mūsu mazajām dāmām šī bija pirmā pastaiga pa mežu ponija mugurā un noteikti ne pēdējā. … Ponijs, skaists, kluss mežs putnu dziesmas, kas var būt labāks par šo? Un visam šim ķirsītis uz kūkas bija kazu barošana, kas bērniem bija kaut kas nebijis.”</span><span data-lang="ru" hidden>«Для наших маленьких дам это была первая прогулка по лесу верхом на пони, и точно не последняя. … Пони, красивый тихий лес, пение птиц, что может быть лучше? А вишенкой на торте стало кормление коз, такого у детей ещё не было.»</span></p>
+        <cite>Didzis Krūmiņš, <span data-lang="lv">Google atsauksme</span><span data-lang="ru" hidden>отзыв в Google, перевод</span></cite>
+      </blockquote>
+      <blockquote class="quote">
+        <p><span data-lang="lv">„Labākā vieta kur relaksēties kopā ar bērniem! … Poniji ir pareizi audzināti droši, mierīgi, ja vajag ātri. Patreiz esam iepazinuši un emīlējuši Livoniju un Zibeni Makvīnu, bet mums vēl tikai 2 gadiņi jātniecei takā viss vēl priekšā!”</span><span data-lang="ru" hidden>«Лучшее место, чтобы отдохнуть вместе с детьми! … Пони правильно воспитаны: надёжные, спокойные, а если нужно, быстрые. Пока что мы узнали и полюбили Ливонию и Молнию Маккуина, но нашей наезднице всего 2 годика, так что всё ещё впереди!»</span></p>
+        <cite>Māris Girnis, <span data-lang="lv">Google atsauksme</span><span data-lang="ru" hidden>отзыв в Google, перевод</span></cite>
+      </blockquote>
+    </div>
+    <a class="go video" href="https://www.tiktok.com/@ponijupastaiga" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span data-lang="lv">Mūsu video: TikTok @ponijupastaiga</span><span data-lang="ru" hidden>Наши видео: TikTok @ponijupastaiga</span></a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-col">
+        <img class="f-logo" src="img/logo.png" width="336" height="454" loading="lazy" alt="Jātnieku sporta klubs Īriss, 1938">
+        <img class="f-hash" src="img/logo-hashtag.png" width="396" height="60" loading="lazy" alt="#ponijupastaiga">
+      </div>
+      <div class="f-col">
+        <p class="cap"><span data-lang="lv">Pieteikšanās</span><span data-lang="ru" hidden>Запись</span></p>
+        <p><a class="f-big" href="tel:+37126954430">26 954 430</a></p>
+        <p><a href="https://wa.me/37126954430" target="_blank" rel="noopener">WhatsApp</a></p>
+        <p><a href="mailto:pastaigaarponiju@gmail.com">pastaigaarponiju@gmail.com</a></p>
+      </div>
+      <div class="f-col">
+        <p class="cap"><span data-lang="lv">Kur mūs redzēt</span><span data-lang="ru" hidden>Где нас увидеть</span></p>
+        <p><span data-lang="lv">Stāvvadu iela 17, Rīga, LV-1030</span><span data-lang="ru" hidden>Stāvvadu iela 17, Рига, LV-1030</span></p>
+        <p><a href="https://www.tiktok.com/@ponijupastaiga" target="_blank" rel="noopener">TikTok</a></p>
+        <p><a href="https://www.instagram.com/ponijupastaiga/" target="_blank" rel="noopener">Instagram</a></p>
+        <p><a href="https://www.facebook.com/people/Ponijupastaiga/61575185602692/" target="_blank" rel="noopener">Facebook</a></p>
+      </div>
+    </div>
+    <div class="f-note">
+      <p><span data-lang="lv"><b>Šī lapa ir Nikitas dizaina priekšlikums, nevis Ponijupastaigas oficiālā vietne.</b> Jautājumi par priekšlikumu: <a href="mailto:ngoloveckis@gmail.com">ngoloveckis@gmail.com</a></span><span data-lang="ru" hidden><b>Это дизайн-предложение Никиты, а не официальный сайт Ponijupastaiga.</b> Вопросы по предложению: <a href="mailto:ngoloveckis@gmail.com">ngoloveckis@gmail.com</a></span></p>
+      <p><span data-lang="lv">Fotogrāfijas: Ponijupastaiga, Google Maps profils. Dzimšanas dienas fotogrāfija: Māra Rūrāne, Google Maps. Logotips: Jātnieku sporta klubs Īriss. Zirgu izjāžu un apmācības cenas: iriss.lv, skatīts 07.10.2026.</span><span data-lang="ru" hidden>Фотографии: Ponijupastaiga, профиль в Google Maps. Фото с дня рождения: Māra Rūrāne, Google Maps. Логотип: Jātnieku sporta klubs Īriss. Цены на конные прогулки и обучение: iriss.lv, просмотрено 07.10.2026.</span></p>
+    </div>
+  </div>
+</footer>
+
+<div class="dock" id="dock">
+  <a class="btn sun" href="#pieteikums"><span data-lang="lv">Pieteikt izjādi</span><span data-lang="ru" hidden>Записаться</span></a>
+  <a class="btn ghost" id="dockcall" href="tel:+37126954430" aria-label="Zvanīt 26 954 430"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg></a>
+</div>
+
+<script>
+(function(){
+  var KEY = 'pp-lang', lang = 'lv';
+  try { var s = localStorage.getItem(KEY); if (s === 'lv' || s === 'ru') lang = s; } catch(e){}
+  try { var q = new URLSearchParams(location.search).get('lang'); if (q === 'lv' || q === 'ru') lang = q; } catch(e){}
+  var $ = function(id){ return document.getElementById(id); };
+
+  var st = { offer:'poni', route:'jura', place:'stallis', day:'sat', time:'any', n:{poni:1, jura:4, svetki:6, trenins:1}, ages:[4] };
+  var LIM = { poni:[1,6], jura:[1,10], svetki:[2,20], trenins:[1,6] };
+
+  var L = {
+    lv:{
+      wd:['svētdiena','pirmdiena','otrdiena','trešdiena','ceturtdiena','piektdiena','sestdiena'],
+      mo:['janvāris','februāris','marts','aprīlis','maijs','jūnijs','jūlijs','augusts','septembris','oktobris','novembris','decembris'],
+      sat:'Sestdien', sun:'Svētdien', other:'Cita diena', and:'un',
+      legend:{poni:'3. Cik bērnu jās?', jura:'3. Cik jātnieku?', svetki:'3. Cik bērnu būs svētkos?', trenins:'3. Cik jātnieku?'},
+      cnt:{poni:'Bērni', jura:'Jātnieki', svetki:'Bērni', trenins:'Jātnieki'},
+      child:function(i){ return (i + 1) + '. bērna vecums'; },
+      hi:{poni:'Labdien! Vēlos pieteikt pastaigu ar poniju.',
+          mezs:'Labdien! Vēlos pieteikt izjādi ar zirgiem pa mežu.',
+          jura:'Labdien! Vēlos pieteikt izjādi ar zirgiem pa mežu un gar jūras krastu.',
+          romant:'Labdien! Vēlos pieteikt romantisku izjādi diviem.',
+          trenins:'Labdien! Vēlos pieteikt jāšanas treniņu.',
+          stallis:'Labdien! Vēlos pieteikt dzimšanas dienu ar ponijiem pie jums stallī.',
+          izbraukums:'Labdien! Vēlos uzaicināt poniju uz mūsu svētkiem.'},
+      place:'Vieta', day:'Diena', time:'Laiks', kids:'Bērni', kid:'Bērns', riders:'Jātnieku skaits', guests:'Bērnu skaits',
+      t:{am:'no rīta', pm:'pēcpusdienā', any:'jebkurā laikā'},
+      nodate:'vēl nezinu', ask:'Vai šis laiks ir brīvs?', askday:'Vai šajā dienā ir brīvs laiks?', askopen:'Kad jums būtu brīvs laiks?',
+      aria:{less:'Mazāk', more:'Vairāk', place:'Kur notiks svētki', call:'Zvanīt 26 954 430'}
+    },
+    ru:{
+      wd:['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+      mo:['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'],
+      sat:'Суббота', sun:'Воскресенье', other:'Другой день', and:'и',
+      legend:{poni:'3. Сколько детей поедет?', jura:'3. Сколько всадников?', svetki:'3. Сколько детей будет на празднике?', trenins:'3. Сколько всадников?'},
+      cnt:{poni:'Дети', jura:'Всадники', svetki:'Дети', trenins:'Всадники'},
+      child:function(i){ return 'Возраст ' + (i + 1) + '-го ребёнка'; },
+      hi:{poni:'Здравствуйте! Хочу записаться на прогулку на пони.',
+          mezs:'Здравствуйте! Хочу записаться на конную прогулку по лесу.',
+          jura:'Здравствуйте! Хочу записаться на конную прогулку по лесу и вдоль моря.',
+          romant:'Здравствуйте! Хочу записаться на романтическую конную прогулку для двоих.',
+          trenins:'Здравствуйте! Хочу записаться на тренировку по верховой езде.',
+          stallis:'Здравствуйте! Хочу отметить день рождения с пони у вас в конюшне.',
+          izbraukums:'Здравствуйте! Хочу пригласить пони на наш праздник.'},
+      place:'Место', day:'День', time:'Время', kids:'Детей', kid:'Ребёнок', riders:'Всадников', guests:'Детей',
+      t:{am:'утром', pm:'после обеда', any:'в любое время'},
+      nodate:'пока не знаю', ask:'Свободно ли это время?', askday:'Есть ли в этот день свободное время?', askopen:'Когда у вас есть свободное время?',
+      aria:{less:'Меньше', more:'Больше', place:'Где будет праздник', call:'Позвонить 26 954 430'}
+    }
+  };
+
+  function nextDow(dow){
+    var d = new Date(); d.setHours(12, 0, 0, 0);
+    var add = (dow - d.getDay() + 7) % 7; if (add === 0) add = 7;
+    d.setDate(d.getDate() + add); return d;
+  }
+  var SAT = nextDow(6), SUN = nextDow(0);
+  st.day = SUN < SAT ? 'sun' : 'sat';
+  function two(n){ return (n < 10 ? '0' : '') + n; }
+  function shortDate(d){ return d.getDate() + '.' + two(d.getMonth() + 1) + (lang === 'lv' ? '.' : ''); }
+  function longDate(d){
+    var t = L[lang];
+    return lang === 'lv' ? t.wd[d.getDay()] + ', ' + d.getDate() + '. ' + t.mo[d.getMonth()]
+                         : t.wd[d.getDay()] + ', ' + d.getDate() + ' ' + t.mo[d.getMonth()];
+  }
+  function pickedDate(){
+    if (st.day === 'sat') return SAT;
+    if (st.day === 'sun') return SUN;
+    var v = $('datums').value; if (!v) return null;
+    var p = v.split('-'); if (p.length !== 3) return null;
+    var d = new Date(+p[0], +p[1] - 1, +p[2], 12); return isNaN(d) ? null : d;
+  }
+  function years(n){
+    var a = n % 10, b = n % 100;
+    if (lang === 'lv') { if (a === 1 && b !== 11) return 'gads'; if (a === 0 || (b >= 11 && b <= 19)) return 'gadu'; return 'gadi'; }
+    if (a === 1 && b !== 11) return 'год'; if (a >= 2 && a <= 4 && (b < 12 || b > 14)) return 'года'; return 'лет';
+  }
+  function agesText(a){
+    var last = a[a.length - 1];
+    if (a.length === 1) return last + ' ' + years(last);
+    return a.slice(0, -1).join(', ') + ' ' + L[lang].and + ' ' + last + ' ' + years(last);
+  }
+
+  function pair(){ return st.offer === 'jura' && st.route === 'romant'; }
+
+  function compose(){
+    var t = L[lang], lines = [], d = pickedDate();
+    var key = st.offer === 'jura' ? st.route : st.offer === 'svetki' ? st.place : st.offer;
+    lines.push(t.hi[key]);
+    if (st.offer === 'svetki' && st.place === 'izbraukums') {
+      var v = $('vieta').value.replace(/\s+/g, ' ').trim();
+      if (v) lines.push(t.place + ': ' + v);
+    }
+    lines.push(t.day + ': ' + (d ? longDate(d) : t.nodate));
+    if (d || st.time !== 'any') lines.push(t.time + ': ' + t.t[st.time]);
+    var n = st.n[st.offer];
+    if (st.offer === 'poni') lines.push(n === 1 ? t.kid + ': ' + agesText(st.ages) : t.kids + ': ' + n + ' (' + agesText(st.ages) + ')');
+    else if (st.offer === 'svetki') lines.push(t.guests + ': ' + n);
+    else if (!pair()) lines.push(t.riders + ': ' + n);
+    lines.push(d ? (st.time === 'any' ? t.askday : t.ask) : t.askopen);
+    var msg = lines.join('\n');
+    $('msg').textContent = msg;
+    $('wa').href = 'https://wa.me/37126954430?text=' + encodeURIComponent(msg);
+    $('sms').href = 'sms:+37126954430?&body=' + encodeURIComponent(msg);
+  }
+
+  function renderDays(){
+    var t = L[lang], box = $('days'), items = [['sat', t.sat, shortDate(SAT), +SAT], ['sun', t.sun, shortDate(SUN), +SUN]];
+    items.sort(function(a, b){ return a[3] - b[3]; });
+    items.push(['other', t.other, '']);
+    box.innerHTML = '';
+    items.forEach(function(it){
+      var b = document.createElement('button'); b.type = 'button'; b.setAttribute('data-v', it[0]);
+      b.setAttribute('aria-pressed', st.day === it[0] ? 'true' : 'false');
+      var w = document.createElement('span'); w.textContent = it[1];
+      if (it[2]) { var sm = document.createElement('small'); sm.textContent = it[2]; w.appendChild(sm); }
+      b.appendChild(w); box.appendChild(b);
+    });
+    $('datums').hidden = $('datlabel').hidden = st.day !== 'other';
+  }
+
+  function renderCount(){
+    var t = L[lang], n = st.n[st.offer];
+    $('cntlegend').textContent = t.legend[st.offer];
+    $('cntlabel').textContent = t.cnt[st.offer];
+    $('nout').textContent = n;
+    $('cntfs').hidden = pair();
+    var box = $('ages'); box.innerHTML = '';
+    if (st.offer !== 'poni') return;
+    while (st.ages.length < n) st.ages.push(4);
+    st.ages.length = n;
+    st.ages.forEach(function(age, i){
+      var row = document.createElement('div'); row.className = 'count';
+      var lab = document.createElement('span'); lab.textContent = t.child(i);
+      var stp = document.createElement('div'); stp.className = 'step';
+      var m = document.createElement('button'); m.type = 'button'; m.textContent = '−'; m.setAttribute('data-age', i); m.setAttribute('data-d', '-1'); m.setAttribute('aria-label', t.child(i) + ' −');
+      var o = document.createElement('output'); o.textContent = age + ' ' + years(age);
+      var p = document.createElement('button'); p.type = 'button'; p.textContent = '+'; p.setAttribute('data-age', i); p.setAttribute('data-d', '1'); p.setAttribute('aria-label', t.child(i) + ' +');
+      stp.appendChild(m); stp.appendChild(o); stp.appendChild(p); row.appendChild(lab); row.appendChild(stp); box.appendChild(row);
+    });
+  }
+
+  function syncGroups(){
+    [['offer', st.offer], ['route', st.route], ['place', st.place], ['time', st.time], ['day', st.day]].forEach(function(g){
+      document.querySelectorAll('.chips[data-group="' + g[0] + '"] button').forEach(function(b){
+        b.setAttribute('aria-pressed', b.getAttribute('data-v') === g[1] ? 'true' : 'false');
+      });
+    });
+    document.querySelectorAll('.sub').forEach(function(x){ x.hidden = x.getAttribute('data-for') !== st.offer; });
+    $('vieta').hidden = st.place !== 'izbraukums';
+    $('datums').hidden = $('datlabel').hidden = st.day !== 'other';
+  }
+
+  function refresh(){ syncGroups(); renderCount(); compose(); }
+
+  function setLang(l){
+    lang = l;
+    document.documentElement.lang = l;
+    document.querySelectorAll('[data-lang]').forEach(function(e){ e.hidden = e.getAttribute('data-lang') !== l; });
+    document.querySelectorAll('.langs button').forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-set') === l ? 'true' : 'false'); });
+    document.querySelectorAll('[data-ph-lv]').forEach(function(i){ i.placeholder = i.getAttribute('data-ph-' + l); });
+    var ar = L[l].aria;
+    $('nminus').setAttribute('aria-label', ar.less); $('nplus').setAttribute('aria-label', ar.more);
+    $('vieta').setAttribute('aria-label', ar.place); $('dockcall').setAttribute('aria-label', ar.call);
+    try { localStorage.setItem(KEY, l); } catch(e){}
+    renderDays(); refresh(); chrome();
+  }
+
+  document.querySelectorAll('.langs button').forEach(function(b){
+    b.addEventListener('click', function(){ setLang(b.getAttribute('data-set')); });
+  });
+  document.querySelectorAll('.chips').forEach(function(g){
+    g.addEventListener('click', function(ev){
+      var b = ev.target.closest('button'); if (!b) return;
+      st[g.getAttribute('data-group')] = b.getAttribute('data-v');
+      refresh();
+      if (g.getAttribute('data-group') === 'day' && st.day === 'other') { try { $('datums').focus(); } catch(e){} }
+    });
+  });
+  $('nminus').addEventListener('click', function(){ var l = LIM[st.offer]; st.n[st.offer] = Math.max(l[0], st.n[st.offer] - 1); refresh(); });
+  $('nplus').addEventListener('click', function(){ var l = LIM[st.offer]; st.n[st.offer] = Math.min(l[1], st.n[st.offer] + 1); refresh(); });
+  $('ages').addEventListener('click', function(ev){
+    var b = ev.target.closest('button'); if (!b) return;
+    var i = +b.getAttribute('data-age'); st.ages[i] = Math.max(1, Math.min(14, st.ages[i] + (+b.getAttribute('data-d'))));
+    refresh();
+  });
+  $('vieta').addEventListener('input', compose);
+  $('datums').addEventListener('input', compose);
+  $('datums').addEventListener('change', compose);
+  document.querySelectorAll('[data-pick]').forEach(function(a){
+    a.addEventListener('click', function(){ st.offer = a.getAttribute('data-pick'); refresh(); });
+  });
+  (function(){ var d = new Date(); $('datums').min = d.getFullYear() + '-' + two(d.getMonth() + 1) + '-' + two(d.getDate()); })();
+
+  var notice = document.querySelector('.notice'), top = $('top');
+  function chrome(){ document.documentElement.style.setProperty('--chrome', (notice.offsetHeight + top.offsetHeight) + 'px'); }
+
+  var dock = $('dock'), acts = $('heroacts'), tool = $('pieteikums'), foot = document.querySelector('footer'), ticking = false;
+  function dockUpdate(){
+    ticking = false;
+    var vh = window.innerHeight, tr = tool.getBoundingClientRect();
+    var past = acts.getBoundingClientRect().bottom < 0;
+    var inTool = tr.top < vh * .85 && tr.bottom > vh * .3;
+    var inFoot = foot.getBoundingClientRect().top < vh;
+    dock.classList.toggle('on', past && !inTool && !inFoot);
+  }
+  window.addEventListener('scroll', function(){ if (!ticking) { ticking = true; requestAnimationFrame(dockUpdate); } }, {passive:true});
+  window.addEventListener('resize', function(){ chrome(); dockUpdate(); });
+
+  setLang(lang);
+  dockUpdate();
+})();
+</script>
+</body>
+</html>
